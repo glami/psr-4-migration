@@ -1,0 +1,8 @@
+parameters:
+    exclude_paths:
+        - '**/template.php'
+services:
+    Rector\Renaming\Rector\Class_\RenameClassRector:
+        $oldToNewClasses:
+            Klarka\UnitTest\ItemOrderReviewTextLibTest: Klarka\Tests\App\Components\OrderReview\ItemOrderReviewTextLibTest
+            Klarka\UnitTest\CronErrorPresenterTest: Klarka\Tests\App\CronjobsPresenter\CronErrorPresenterTest
